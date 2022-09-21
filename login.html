@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        body{
+            background: linear-gradient(45deg,#4b82cf 500px, #7b55b6) ;
+        }
+        #box{
+            height: 600px;
+            width: 30%;
+            margin: 3% auto 8%;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #box>div:nth-child(1){
+            height: 170px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        form{
+            height: 240px;
+            width: 90%;
+            margin:  auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input{
+            width: 80%;
+            margin: 0px auto;
+            height: 45px;
+            border: 0;
+            outline: 0;
+            border-bottom: 2px solid rgb(143, 143, 143);
+            opacity: 0.6;
+        }
+        button{
+            height: 50px;
+            width: 80%;
+            margin: auto;
+            border: none;
+            background: linear-gradient(45deg, #4b82cf 5px,#7b55b6);
+            color: white;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        #box>div:nth-child(3){
+            height: 150px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div>p>span{
+            color: #0059ac;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>Login</div>
+        <div>
+            <form action="">
+                <input type="email" placeholder="Email">
+                <br>
+                <input type="password" placeholder="Password">
+                <br>
+                <button>Login</button>
+            </form>
+        </div>
+        <div>
+            <p>Forgot <span>Password?</span></p>
+            <p>Don't have an account? <span>Sign up</span></p>
+        </div>
+    </div>
+</body>
+</html>
