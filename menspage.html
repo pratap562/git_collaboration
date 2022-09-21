@@ -5,8 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .menspage{
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:2%; ;
+            margin-top: 30px;
+            
+        }
+
+        .menspage>div{
+            
+            /* border: 1px solid blue; */
+            height: auto;
+            padding: 15px;
+            
+        }
+        img{
+            height: 300px;
+            width: 40%;
+        }
+        .menspage>div>div{
+            text-align: center;
+        }
+        p{
+            font-size: 30px;
+            color: grey;
+            margin-top: -20px;
+        }
+        #dis{
+            color: green;
+        }
+        #op{
+            color: grey;
+            text-decoration: line-through;
+        }
+        p+h1{
+            margin-top: -10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="menspage">
+        <div>
+            <div><img src="https://rukminim1.flixcart.com/image/495/594/jr58l8w0/shrug/6/g/n/s-132-arcedo-original-imafczhqywhvcfkf.jpeg?q=50" alt=""></div>
+            
+            <h1>PAUSE</h1>
+            <p>Men cotton Longs Seleves Cotton</p>
+            <h1>₹359 <span id="op">₹1,499</span> <span id="dis">-76%</span></h1>
+        </div>
+        <div>
+            <div><img src="https://rukminim1.flixcart.com/image/495/594/kw2fki80/jacket/d/3/8/xxl-no-221054008-1-monte-carlo-original-imag8twqwebqm7yu.jpeg?q=50" alt=""></div>
+            
+            <h1>JUBINATION</h1>
+            <p>Men Wool Selevelees Sweater Pack Of 1</p>
+            <h1>₹799 <span id="op">₹1,499</span> <span id="dis">-47%</span></h1>
+
+
+
+        </div>
+
+    </div>
 </body>
 </html>
