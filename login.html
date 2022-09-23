@@ -7,21 +7,21 @@
     <title>Login page</title>
     <style>
         *{
+            
             font-family: sans-serif;
         }
         body{
             background: linear-gradient(45deg,#4b82cf 500px, #7b55b6) ;
         }
         #box{
-            height: 600px;
-            width: 30%;
-            margin: 3% auto 8%;
+            padding: 50px;
+            width: 25%;
+            margin: 5% auto;
             border-radius: 15px;
             background-color: white;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
         #box>div:nth-child(1){
-            height: 170px;
             width: 90%;
             margin: auto;
             display: flex;
@@ -31,34 +31,38 @@
             font-weight: 700;
         }
         form{
-            height: 240px;
             width: 90%;
             margin:  auto;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             gap: 10px;
         }
         input{
-            width: 80%;
-            margin: 0px auto;
-            height: 45px;
             border: 0;
             outline: 0;
+            margin: 15px 0;
+            padding: 15px 0;
             border-bottom: 2px solid rgb(143, 143, 143);
             opacity: 0.6;
         }
         button{
-            height: 50px;
-            width: 80%;
-            margin: auto;
+            margin: 15px 0;
             border: none;
+            width: 100%;
+            padding: 15px 0;
             background: linear-gradient(45deg, #4b82cf 5px,#7b55b6);
             color: white;
             border-radius: 10px;
             font-size: 20px;
+            cursor: pointer;
+            transition: 500ms;
+        }
+        button:hover{
+            transition: 500ms;
+            background: linear-gradient(45deg, #0f4086 5px,#4f15a5);
         }
         #box>div:nth-child(3){
-            height: 150px;
             width: 90%;
             margin: auto;
             display: flex;
@@ -68,6 +72,7 @@
         }
         div>p>span{
             color: #0059ac;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -77,9 +82,7 @@
         <div>
             <form action="">
                 <input type="email" placeholder="Email">
-                <br>
                 <input type="password" placeholder="Password">
-                <br>
                 <button>Login</button>
             </form>
         </div>
